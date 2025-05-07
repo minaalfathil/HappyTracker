@@ -5,29 +5,29 @@ string moodmeter;
 int moodscore=0;
 void positive(){
     cin>>moodmeter;
-    if (moodmeter =="Yes"){
+    if (moodmeter =="yes"){
         moodscore++;
     }
-    else if (moodmeter == "No") {
+    else if (moodmeter == "no") {
         moodscore--;
     }
 }
 void negative(){
     cin>>moodmeter;
-    if (moodmeter =="No"){
+    if (moodmeter =="no"){
         moodscore++;
     }
-    else if (moodmeter == "Yes") {
+    else if (moodmeter == "yes") {
         moodscore--;
     } 
 }
 int main() {
 
  cout<< "Welcome to Happy Tracker!"<<endl;
- cout << "you will be asked questions and you will be given reccomendations. (answer Only in Yes/No)"<< endl;
+ cout << "you will be asked questions and you will be given reccomendations. (answer Only in yes/no)"<< endl;
  cout << "shall we start?"<<endl;
  cin>>moodmeter;
-if (moodmeter == "Yes") {
+if (moodmeter == "yes") {
     cout<< "Did you wake up feeling well-rested today?"<<endl;
     positive();
 
@@ -93,7 +93,7 @@ if (moodmeter == "Yes") {
     }
 
 }
-else if (moodmeter=="No"){
+else if (moodmeter=="no"){
     cout <<"Exiting..."<<endl;
 }
  return 0;
