@@ -27,7 +27,15 @@ int main() {
  cout << "you will be asked questions and you will be given reccomendations. (answer Only in yes/no)"<< endl;
  cout << "shall we start?"<<endl;
  cin>>moodmeter;
-if (moodmeter == "yes") {
+
+ while (moodmeter == "yes"){
+
+
+        if (moodmeter == "no") {
+            break;
+        }
+
+
     cout<< "Did you wake up feeling well-rested today?"<<endl;
     positive();
 
@@ -91,10 +99,13 @@ if (moodmeter == "yes") {
         cout<<"Challenge yourself today—you’re in the right mindset for it."<<endl;
     
     }
-
+ cout << "\nWould you like to try again? (yes/no): ";
+        cin >> moodmeter;
+        if (moodmeter == "no") {
+            break;
+        }
+        moodscore = 0; 
 }
-else if (moodmeter=="no"){
-    cout <<"Exiting..."<<endl;
-}
+cout << "Thanks for using Happy Tracker. Goodbye!" << endl;
  return 0;
 }
